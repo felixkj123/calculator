@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="div1">
+        <div id="div2">
+            <div id="inputTab">
+                <ol id="input">
+                    <input id="inputConsole" type="text" placeholder="0">
+                    <input id="outputConsole" type="text">
+                </ol>
+            </div>
+            <div id="inputKeys">
+                <ol class="keys" id="inputKeyTab1">
+                    <!-- <button class="key" >AC</button> -->
+                    <input class="key" type="button" value="(" onclick="displayContent('(')">
+                    <input class="key" type="button" value=")" onclick="displayContent(')')">
+                    <input class="key" type="button" value="del" onclick="delLastItem()">
+                    <input class="key" type="button" value="/" onclick="displayContent('/')">
+                </ol>
+                <ol class="keys" id="inputKeyTab2">
+                    <input class="key" type="button" value="7" onclick="displayContent('7')">
+                    <input class="key" type="button" value="8" onclick="displayContent('8')">
+                    <input class="key" type="button" value="9" onclick="displayContent('9')">
+                    <input class="key" type="button" value="*" onclick="displayContent('*')">
+                </ol>
+                <ol class="keys" id="inputKeyTab3">
+                    <input class="key" type="button" value="4" onclick="displayContent('4')">
+                    <input class="key" type="button" value="5" onclick="displayContent('5')">
+                    <input class="key" type="button" value="6" onclick="displayContent('6')">
+                    <input class="key" type="button" value="-" onclick="displayContent('-')">
+                </ol>
+                <ol class="keys" id="inputKeyTab4">
+                    <input class="key" type="button" value="1" onclick="displayContent('1')">
+                    <input class="key" type="button" value="2" onclick="displayContent('2')">
+                    <input class="key" type="button" value="3" onclick="displayContent('3')">
+                    <input class="key" type="button" value="+" onclick="displayContent('+')">
+                </ol>
+                <ol class="keys" id="inputKeyTab5">
+                    <input class="key" type="button" value="0" onclick="displayContent('0')">
+                    <input class="key" type="button" value="." onclick="displayContent('.')">
+                    <input class="key" type="button" value="AC" onclick="clearAll()">
+                    <input class="key" type="button" value="=" onclick="evaluateExpr()">
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- external JS -->
+<script src="./calc.js"></script>
+</html>
